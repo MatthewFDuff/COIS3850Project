@@ -3,21 +3,29 @@ import { Link } from 'react-router-dom';
 
 function Navbar(props) {
   return (
-    <nav class="topnav" id="myTopnav">
-      <ul class="menu">
+    <nav className="navigation">
+      <ul className="menu">
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">
+            <i className="fas fa-home" aria-hidden="true"></i>
+          </Link>
         </li>
         <li>
-          <Link to="/article">Article</Link>
+          <Link to="/article">
+            <i className="fas fa-newspaper" aria-hidden="true"></i>
+          </Link>
         </li>
 
         <li>
-          <Link to="/practice">Flashcards</Link>
+          <Link to="/practice">
+            <i className="fas fa-graduation-cap" aria-hidden="true"></i>
+          </Link>
         </li>
 
         <li>
-          <Link to="/quiz">Quiz</Link>
+          <Link to="/quiz">
+            <i className="fas fa-feather-alt" aria-hidden="true"></i>
+          </Link>
         </li>
       </ul>
     </nav>
